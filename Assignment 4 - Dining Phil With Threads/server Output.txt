@@ -1,0 +1,205 @@
+student@student-OptiPlex-3020:~$ sudo su
+[sudo] password for student: 
+root@student-OptiPlex-3020:/home/student/Documents# cd mongodb-linux-x86_64-3.0.6/
+root@student-OptiPlex-3020:/home/student/Documents/mongodb-linux-x86_64-3.0.6# cd bin/
+root@student-OptiPlex-3020:/home/student/Documents/mongodb-linux-x86_64-3.0.6/bin# ./mongod --dbpath=/home/student/Documents/data/db
+2016-01-22T08:55:44.652+0530 I JOURNAL  [initandlisten] journal dir=/home/student/Documents/data/db/journal
+2016-01-22T08:55:44.652+0530 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2016-01-22T08:55:44.764+0530 I JOURNAL  [durability] Durability thread started
+2016-01-22T08:55:44.764+0530 I JOURNAL  [journal writer] Journal writer thread started
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] MongoDB starting : pid=2356 port=27017 dbpath=/home/student/Documents/data/db 64-bit host=student-OptiPlex-3020
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] 
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] 
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] 
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] 
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] db version v3.0.6
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] git version: 1ef45a23a4c5e3480ac919b28afcba3c615488f2
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] build info: Linux build6.ny.cbi.10gen.cc 2.6.32-431.3.1.el6.x86_64 #1 SMP Fri Jan 3 21:39:27 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-01-22T08:55:44.790+0530 I CONTROL  [initandlisten] options: { storage: { dbPath: "/home/student/Documents/data/db" } }
+2016-01-22T08:55:44.792+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-01-22T08:58:10.041+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57930 #1 (1 connection now open)
+2016-01-22T08:59:43.192+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57938 #2 (2 connections now open)
+2016-01-22T08:59:43.193+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57933 #3 (3 connections now open)
+2016-01-22T08:59:43.193+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57936 #4 (4 connections now open)
+2016-01-22T08:59:43.193+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57940 #5 (5 connections now open)
+2016-01-22T08:59:43.193+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57932 #6 (6 connections now open)
+2016-01-22T08:59:43.199+0530 I INDEX    [conn4] allocating new ns file /home/student/Documents/data/db/mydb.ns, filling with zeroes...
+2016-01-22T08:59:43.409+0530 I STORAGE  [FileAllocator] allocating new datafile /home/student/Documents/data/db/mydb.0, filling with zeroes...
+2016-01-22T08:59:43.409+0530 I STORAGE  [FileAllocator] creating directory /home/student/Documents/data/db/_tmp
+2016-01-22T08:59:43.478+0530 I STORAGE  [FileAllocator] done allocating datafile /home/student/Documents/data/db/mydb.0, size: 64MB,  took 0.042 secs
+2016-01-22T08:59:44.493+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57942 #7 (7 connections now open)
+2016-01-22T08:59:45.499+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57944 #8 (8 connections now open)
+2016-01-22T08:59:45.507+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57946 #9 (9 connections now open)
+2016-01-22T08:59:46.517+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57948 #10 (10 connections now open)
+2016-01-22T08:59:46.524+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57950 #11 (11 connections now open)
+2016-01-22T08:59:47.532+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57952 #12 (12 connections now open)
+2016-01-22T08:59:47.540+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57954 #13 (13 connections now open)
+2016-01-22T08:59:48.545+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57956 #14 (14 connections now open)
+2016-01-22T08:59:48.548+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57958 #15 (15 connections now open)
+2016-01-22T08:59:49.554+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57960 #16 (16 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn6] end connection 127.0.0.1:57932 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn11] end connection 127.0.0.1:57950 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn12] end connection 127.0.0.1:57952 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn4] end connection 127.0.0.1:57936 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn2] end connection 127.0.0.1:57938 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn8] end connection 127.0.0.1:57944 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn16] end connection 127.0.0.1:57960 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn9] end connection 127.0.0.1:57946 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn13] end connection 127.0.0.1:57954 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn14] end connection 127.0.0.1:57956 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn3] end connection 127.0.0.1:57933 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn15] end connection 127.0.0.1:57958 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn7] end connection 127.0.0.1:57942 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn10] end connection 127.0.0.1:57948 (15 connections now open)
+2016-01-22T08:59:49.564+0530 I NETWORK  [conn5] end connection 127.0.0.1:57940 (15 connections now open)
+2016-01-22T09:02:21.804+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57966 #17 (2 connections now open)
+2016-01-22T09:02:21.804+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57963 #18 (3 connections now open)
+2016-01-22T09:02:21.804+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57962 #19 (4 connections now open)
+2016-01-22T09:02:21.804+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57968 #20 (5 connections now open)
+2016-01-22T09:02:21.804+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57970 #21 (6 connections now open)
+2016-01-22T09:02:22.813+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57972 #22 (7 connections now open)
+2016-01-22T09:02:23.818+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57974 #23 (8 connections now open)
+2016-01-22T09:02:23.825+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57976 #24 (9 connections now open)
+2016-01-22T09:02:24.829+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57978 #25 (10 connections now open)
+2016-01-22T09:02:24.832+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57980 #26 (11 connections now open)
+2016-01-22T09:02:25.835+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57982 #27 (12 connections now open)
+2016-01-22T09:02:25.837+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57984 #28 (13 connections now open)
+2016-01-22T09:02:26.840+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57986 #29 (14 connections now open)
+2016-01-22T09:02:26.843+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57988 #30 (15 connections now open)
+2016-01-22T09:02:27.846+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57990 #31 (16 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn20] end connection 127.0.0.1:57968 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn19] end connection 127.0.0.1:57962 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn24] end connection 127.0.0.1:57976 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn17] end connection 127.0.0.1:57966 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn21] end connection 127.0.0.1:57970 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn18] end connection 127.0.0.1:57963 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn22] end connection 127.0.0.1:57972 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn28] end connection 127.0.0.1:57984 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn27] end connection 127.0.0.1:57982 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn23] end connection 127.0.0.1:57974 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn29] end connection 127.0.0.1:57986 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn25] end connection 127.0.0.1:57978 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn30] end connection 127.0.0.1:57988 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn26] end connection 127.0.0.1:57980 (15 connections now open)
+2016-01-22T09:02:27.853+0530 I NETWORK  [conn31] end connection 127.0.0.1:57990 (15 connections now open)
+2016-01-22T09:03:31.402+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57992 #32 (2 connections now open)
+2016-01-22T09:03:31.402+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57993 #33 (3 connections now open)
+2016-01-22T09:03:31.402+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57996 #34 (4 connections now open)
+2016-01-22T09:03:31.402+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57998 #35 (5 connections now open)
+2016-01-22T09:03:31.402+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58000 #36 (6 connections now open)
+2016-01-22T09:03:32.411+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58002 #37 (7 connections now open)
+2016-01-22T09:03:33.418+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58004 #38 (8 connections now open)
+2016-01-22T09:03:33.424+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58006 #39 (9 connections now open)
+2016-01-22T09:03:34.432+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58008 #40 (10 connections now open)
+2016-01-22T09:03:34.440+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58010 #41 (11 connections now open)
+2016-01-22T09:03:35.447+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58012 #42 (12 connections now open)
+2016-01-22T09:03:35.455+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58014 #43 (13 connections now open)
+2016-01-22T09:03:36.463+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58016 #44 (14 connections now open)
+2016-01-22T09:03:36.470+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58018 #45 (15 connections now open)
+2016-01-22T09:03:37.478+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58020 #46 (16 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn37] end connection 127.0.0.1:58002 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn46] end connection 127.0.0.1:58020 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn44] end connection 127.0.0.1:58016 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn33] end connection 127.0.0.1:57993 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn38] end connection 127.0.0.1:58004 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn40] end connection 127.0.0.1:58008 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn42] end connection 127.0.0.1:58012 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn43] end connection 127.0.0.1:58014 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn41] end connection 127.0.0.1:58010 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn32] end connection 127.0.0.1:57992 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn35] end connection 127.0.0.1:57998 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn36] end connection 127.0.0.1:58000 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn45] end connection 127.0.0.1:58018 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn34] end connection 127.0.0.1:57996 (15 connections now open)
+2016-01-22T09:03:37.487+0530 I NETWORK  [conn39] end connection 127.0.0.1:58006 (15 connections now open)
+2016-01-22T09:04:29.545+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58022 #47 (2 connections now open)
+2016-01-22T09:04:29.547+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58024 #48 (3 connections now open)
+2016-01-22T09:04:29.547+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58026 #49 (4 connections now open)
+2016-01-22T09:04:29.547+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58027 #50 (5 connections now open)
+2016-01-22T09:04:29.547+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58030 #51 (6 connections now open)
+2016-01-22T09:04:30.559+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58032 #52 (7 connections now open)
+2016-01-22T09:04:31.564+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58034 #53 (8 connections now open)
+2016-01-22T09:04:31.568+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58036 #54 (9 connections now open)
+2016-01-22T09:04:32.572+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58038 #55 (10 connections now open)
+2016-01-22T09:04:32.575+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58040 #56 (11 connections now open)
+2016-01-22T09:04:33.579+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58042 #57 (12 connections now open)
+2016-01-22T09:04:33.584+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58044 #58 (13 connections now open)
+2016-01-22T09:04:34.592+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58046 #59 (14 connections now open)
+2016-01-22T09:04:34.598+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58048 #60 (15 connections now open)
+2016-01-22T09:04:35.606+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58050 #61 (16 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn54] end connection 127.0.0.1:58036 (15 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn55] end connection 127.0.0.1:58038 (15 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn59] end connection 127.0.0.1:58046 (15 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn53] end connection 127.0.0.1:58034 (15 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn56] end connection 127.0.0.1:58040 (13 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn57] end connection 127.0.0.1:58042 (13 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn60] end connection 127.0.0.1:58048 (12 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn61] end connection 127.0.0.1:58050 (11 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn51] end connection 127.0.0.1:58030 (15 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn48] end connection 127.0.0.1:58024 (10 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn47] end connection 127.0.0.1:58022 (8 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn49] end connection 127.0.0.1:58026 (14 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn58] end connection 127.0.0.1:58044 (11 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn52] end connection 127.0.0.1:58032 (10 connections now open)
+2016-01-22T09:04:35.615+0530 I NETWORK  [conn50] end connection 127.0.0.1:58027 (3 connections now open)
+2016-01-22T09:05:30.160+0530 I INDEX    [conn1] allocating new ns file /home/student/Documents/data/db/dbs.ns, filling with zeroes...
+2016-01-22T09:05:30.436+0530 I STORAGE  [FileAllocator] allocating new datafile /home/student/Documents/data/db/dbs.0, filling with zeroes...
+2016-01-22T09:05:30.478+0530 I STORAGE  [FileAllocator] done allocating datafile /home/student/Documents/data/db/dbs.0, size: 64MB,  took 0.041 secs
+2016-01-22T09:05:30.493+0530 I COMMAND  [conn1] command dbs.$cmd command: create { create: "mycol" } keyUpdates:0 writeConflicts:0 numYields:0 reslen:37 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, MMAPV1Journal: { acquireCount: { w: 6 } }, Database: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 333ms
+2016-01-22T09:05:42.792+0530 I COMMAND  [conn1] dropDatabase dbs starting
+2016-01-22T09:05:42.840+0530 I JOURNAL  [conn1] journalCleanup...
+2016-01-22T09:05:42.841+0530 I JOURNAL  [conn1] removeJournalFiles
+2016-01-22T09:05:42.901+0530 I JOURNAL  [conn1] journalCleanup...
+2016-01-22T09:05:42.901+0530 I JOURNAL  [conn1] removeJournalFiles
+2016-01-22T09:05:42.927+0530 I COMMAND  [conn1] dropDatabase dbs finished
+2016-01-22T09:05:42.927+0530 I COMMAND  [conn1] command dbs.$cmd command: dropDatabase { dropDatabase: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:54 locks:{ Global: { acquireCount: { r: 2, w: 1, W: 1 } }, MMAPV1Journal: { acquireCount: { w: 4 } }, Database: { acquireCount: { W: 1 } } } 135ms
+2016-01-22T09:06:38.688+0530 I COMMAND  [conn1] dropDatabase mydb starting
+2016-01-22T09:06:38.689+0530 I JOURNAL  [conn1] journalCleanup...
+2016-01-22T09:06:38.689+0530 I JOURNAL  [conn1] removeJournalFiles
+2016-01-22T09:06:38.691+0530 I JOURNAL  [conn1] journalCleanup...
+2016-01-22T09:06:38.691+0530 I JOURNAL  [conn1] removeJournalFiles
+2016-01-22T09:06:38.697+0530 I COMMAND  [conn1] dropDatabase mydb finished
+2016-01-22T09:06:43.060+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58052 #62 (2 connections now open)
+2016-01-22T09:06:43.063+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58054 #63 (3 connections now open)
+2016-01-22T09:06:43.063+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58056 #64 (4 connections now open)
+2016-01-22T09:06:43.063+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58057 #65 (5 connections now open)
+2016-01-22T09:06:43.063+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58060 #66 (6 connections now open)
+2016-01-22T09:06:43.066+0530 I INDEX    [conn62] allocating new ns file /home/student/Documents/data/db/mydb.ns, filling with zeroes...
+2016-01-22T09:06:43.322+0530 I STORAGE  [FileAllocator] allocating new datafile /home/student/Documents/data/db/mydb.0, filling with zeroes...
+2016-01-22T09:06:43.348+0530 I STORAGE  [FileAllocator] done allocating datafile /home/student/Documents/data/db/mydb.0, size: 64MB,  took 0.025 secs
+2016-01-22T09:06:44.369+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58062 #67 (7 connections now open)
+2016-01-22T09:06:45.377+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58064 #68 (8 connections now open)
+2016-01-22T09:06:45.385+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58066 #69 (9 connections now open)
+2016-01-22T09:06:46.392+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58068 #70 (10 connections now open)
+2016-01-22T09:06:46.396+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58070 #71 (11 connections now open)
+2016-01-22T09:06:47.401+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58072 #72 (12 connections now open)
+2016-01-22T09:06:47.405+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58074 #73 (13 connections now open)
+2016-01-22T09:06:48.409+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58076 #74 (14 connections now open)
+2016-01-22T09:06:48.414+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58078 #75 (15 connections now open)
+2016-01-22T09:06:49.422+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58080 #76 (16 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn64] end connection 127.0.0.1:58056 (15 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn71] end connection 127.0.0.1:58070 (15 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn72] end connection 127.0.0.1:58072 (14 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn66] end connection 127.0.0.1:58060 (15 connections now open)
+2016-01-22T09:06:49.433+0530 I NETWORK  [conn75] end connection 127.0.0.1:58078 (13 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn69] end connection 127.0.0.1:58066 (15 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn68] end connection 127.0.0.1:58064 (15 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn62] end connection 127.0.0.1:58052 (15 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn70] end connection 127.0.0.1:58068 (15 connections now open)
+2016-01-22T09:06:49.433+0530 I NETWORK  [conn76] end connection 127.0.0.1:58080 (6 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn65] end connection 127.0.0.1:58057 (15 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn67] end connection 127.0.0.1:58062 (15 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn73] end connection 127.0.0.1:58074 (13 connections now open)
+2016-01-22T09:06:49.433+0530 I NETWORK  [conn74] end connection 127.0.0.1:58076 (13 connections now open)
+2016-01-22T09:06:49.432+0530 I NETWORK  [conn63] end connection 127.0.0.1:58054 (15 connections now open)
+2016-01-22T09:07:28.897+0530 I NETWORK  [conn1] end connection 127.0.0.1:57930 (0 connections now open)
+^Z
+[1]+  Stopped                 ./mongod --dbpath=/home/student/Documents/data/db
+root@student-OptiPlex-3020:/home/student/Documents/mongodb-linux-x86_64-3.0.6/bin# 
+

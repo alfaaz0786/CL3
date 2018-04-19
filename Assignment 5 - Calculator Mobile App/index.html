@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    
+        <input type="number" id="number" class="number" name="number">
+        <button id="sine">Sine</button>
+        <p id="ans"></p>
+    
+
+    <script>
+        document.getElementById("sine").addEventListener("click",sine);
+        function sine(){
+            document.getElementById("ans").innerHTML = Math.sin(document.getElementById("number").innerHTML);
+        }
+    
+    </script>
+
+</body>
+</html>
